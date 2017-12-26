@@ -16,6 +16,9 @@
     <!-- Custom styles for this template -->
     <link href="css/heroic-features.css" rel="stylesheet">
 
+    <! -- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -38,7 +41,7 @@
               <a class="nav-link" href="news.html">News</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Rules</a>
+              <a class="nav-link" href="rules.html">Rules</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Staff</a>
@@ -55,10 +58,10 @@
     <div class="container">
 
       <!-- Jumbotron Header -->
-      <header class="jumbotron my-4">
+      <header class="jumbotron my-4 home-jumbo">
         <h1 class="display-3">Zildith Network</h1>
         <p class="lead">Established in late 2017, Zildith is the unofficial continuation of the Avicus Network! True to form, our server provides quality Minecraft PvP with a large emphasis on community.</p>
-        <a href="#" class="btn btn-success btn-lg">&raquo; Play!</a>
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#playPop">&raquo; Play</button>
       </header>
 
       <!-- Page Features -->
@@ -72,7 +75,7 @@
               <p class="card-text">Play the way that you wish to play with your friends. With a voting system in place that allows users to select their favorite maps after every match, you will be left feeling overwhelmed with our variety of PvP maps!</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">&raquo; Maps</a>
+              <a href="maps.html" class="btn btn-primary">&raquo; Maps</a>
             </div>
           </div>
         </div>
@@ -85,7 +88,7 @@
               <p class="card-text">Our server offers tournaments and events ran by experienced tournament directors frequently for you to take your experience to a new level with an exciting competitive edge! We are prided in offering unique events!</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">&raquo; Tournament</a>
+              <a href="competitive.html" class="btn btn-primary">&raquo; Tournament</a>
             </div>
           </div>
         </div>
@@ -98,7 +101,7 @@
               <p class="card-text">We are community driven and love to hear from everyone! With Discord and our forums, we give everyone a platform to their preference that you can be heard from. Do you have any exciting new ideas? Let us know!</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">&raquo; Forums</a>
+              <a href="forums.html" class="btn btn-primary">&raquo; Forums</a>
             </div>
           </div>
         </div>
@@ -111,10 +114,57 @@
               <p class="card-text">Discord is the perfect place to have voice chat with friends you have met on the server. You'll surely be able to find a room to hang out in and have loads of fun!</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">&raquo; Discord</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#discordPop">&raquo; Discord</button>
             </div>
           </div>
         </div>
+          
+        <!-- Discord Popup -->
+        <div id="discordPop" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                        <h4 class="modal-title">Discord</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      <div class="modal-body">
+        <p>Discord is the perfect place to have voice chat with friends you have met on the server. You'll surely be able to find a room to hang out in and have loads of fun!</p>
+      </div>
+      <div class="modal-footer">
+        <a href="https://discord.gg/GEYfNM4" class="btn btn-primary">&raquo; Join Discord</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+                  <!-- Play Popup -->
+        <div id="playPop" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                        <h4 class="modal-title">Play now!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      <div class="modal-body">
+        <p>Connect to our servers using the IP address below:</p>
+          <div class="form-group">
+            <input autofocus="autofocus" onFocus="this.select()" id="ip" type="text" class="form-control disabled" readonly value="COMING SOON!">
+              
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
       </div>
       <!-- /.row -->
