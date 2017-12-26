@@ -61,7 +61,7 @@
       <header class="jumbotron my-4 home-jumbo">
         <h1 class="display-3">Zildith Network</h1>
         <p class="lead">Established in late 2017, Zildith is the unofficial continuation of the Avicus Network! True to form, our server provides quality Minecraft PvP with a large emphasis on community.</p>
-        <a href="#" class="btn btn-success btn-lg">&raquo; Play!</a>
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#playPop">&raquo; Play</button>
       </header>
 
       <!-- Page Features -->
@@ -135,6 +135,31 @@
       </div>
       <div class="modal-footer">
         <a href="https://discord.gg/GEYfNM4" class="btn btn-primary">&raquo; Join Discord</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+                  <!-- Play Popup -->
+        <div id="playPop" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                        <h4 class="modal-title">Play now!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      <div class="modal-body">
+        <p>Connect to our servers using the IP address below:</p>
+          <div class="form-group">
+            <input autofocus="autofocus" onFocus="this.select()" id="ip" type="text" class="form-control disabled" readonly value="COMING SOON!">
+              
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
 
